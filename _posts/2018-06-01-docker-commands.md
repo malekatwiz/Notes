@@ -33,12 +33,12 @@ docker run --rm
 docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}" ContainerID {% endhighlight %}
 
 * List images:
-{% highlisght %}
+{% highlight bash %}
 docker image ls
 {% endhighlight %}
 
 * List containers:
-{% highlisght %}
+{% highlight bash %}
 docker container ls
 docker container ls --all
 docker container ls -aq
