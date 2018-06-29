@@ -17,3 +17,8 @@ author: "Malek Atwiz"
 * Remove after completion: ``` docker run --rm ```
 
 * Get container IP Address: ``` docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}" ContainerID ```
+
+* Testing command:
+{% highlight %}
+docker run --it
+{% endhighlight %}
