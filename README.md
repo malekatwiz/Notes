@@ -1,6 +1,4 @@
-# Notes
-Collection of handy notes:
+# Tech Notes
+Some handy notes that I keep here for easy access:
 
-Contents:
-
-* [Docker](Docker.md)
+Head over to the blog: https://malekatwiz.github.io/Notes
