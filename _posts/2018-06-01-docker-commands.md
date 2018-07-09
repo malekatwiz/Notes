@@ -30,7 +30,7 @@ docker run --rm
 
 * Get container IP Address:
 {% highlight bash %}
-docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}" ContainerID {% endhighlight %}
+ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ContainerID {% endhighlight %}
 
 * List images:
 {% highlight bash %}
