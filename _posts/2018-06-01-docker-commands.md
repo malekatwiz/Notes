@@ -42,3 +42,8 @@ docker container ls
 docker container ls --all
 docker container ls -aq
 {% endhighlight %}
+
+* Remove specific image:
+{% highlight bash %}
+docker rmi ImageID
+{% endhighlight %}
