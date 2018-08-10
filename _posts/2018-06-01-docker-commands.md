@@ -47,3 +47,28 @@ docker container ls -aq
 {% highlight bash %}
 docker rmi ImageID
 {% endhighlight %}
+
+* Run container in the background with name:
+{% highlight bash %}
+docker run -d --name bluewhaleweb webimage
+{% endhighlight %}
+
+* Run container and link it to another one with an alias:
+{% highlight bash %}
+docker run -d -p 5000:5000 --link bluewhaleweb:web someotherimage
+{% endhighlight %}
+
+* Build an image and tag it:
+{% highlight bash %}
+docker build -f PathToDockerfile -t tag .
+{% endhighlight %}
+
+* Create a custom network:
+{% highlight bash %}
+docker network create --driver bridge networkname
+{% endhighlight %}
+
+* Run a container in a specific network:
+{% highlight bash %}
+docker run -d --net=networkname --name conainername imagename
+{% endhighlight %}
