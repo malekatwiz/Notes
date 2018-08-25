@@ -43,6 +43,16 @@ docker container ls --all
 docker container ls -aq
 {% endhighlight %}
 
+* Stop all running containers:
+{% highlight bash %}
+docker stop $(docker ps -a -q)
+{% endhighlight %}
+
+* Remove all containers:
+{% highlight bash %}
+docker rm $(docker ps -a -q)
+{% endhighlight %}
+
 * Remove specific image:
 {% highlight bash %}
 docker rmi ImageID
