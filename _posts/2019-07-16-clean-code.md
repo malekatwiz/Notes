@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Meaningful Names in Clean Code"
+title: "Clean Code"
 author: "Malek Atwiz"
 ---
 
 List of some notes taken from **Clean Code** book by **Robert C. Martin**
 
+# Meaningful Names:
 + Use intention-revealing names
 + Avoid disinformation
 + Make meaningful distinction
